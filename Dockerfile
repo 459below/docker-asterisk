@@ -1,7 +1,10 @@
 FROM debian
 
-RUN apt update && apt install -y\
- asterisk
+RUN apt update && apt install -y \
+ asterisk \
+ asterisk-opus \
+ asterisk-core-sounds-en-g722 \
+ asterisk-moh-opsound-g722
 
 EXPOSE 5060/udp
 EXPOSE 4069/udp
