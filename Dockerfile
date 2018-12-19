@@ -4,7 +4,8 @@ RUN apt update && apt install -y \
  asterisk \
  asterisk-opus \
  asterisk-core-sounds-en-g722 \
- asterisk-moh-opsound-g722
+ asterisk-moh-opsound-g722 \
+ && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 5060/udp
 EXPOSE 5061/tcp
