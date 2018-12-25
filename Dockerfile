@@ -15,4 +15,4 @@ EXPOSE 4569/udp
 EXPOSE 10000-10010/udp
 EXPOSE 2727/udp
 
-CMD ["asterisk","-g","-f","-U", "asterisk"]
+CMD ["asterisk", "-g", "-f", "-U", "asterisk"]
